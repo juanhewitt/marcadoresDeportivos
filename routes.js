@@ -13,6 +13,8 @@ const routes = express.Router();
     });
 });*/
 
+
+
 routes.get('/:table',(req,res)=>{
     req.getConnection((err,conn)=>{
         if(err) return res.send(err)
